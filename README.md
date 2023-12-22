@@ -25,7 +25,7 @@ Whether the odds fall under a single bookmaker or span across multiple bookies, 
 First of all, we must calculate if arbitrage is possible given an odd combination.
 
 Arbitrage is possible if:
-$$\frac{1}{First Odd} + \frac{1}{Second Odd} + \frac{1}{N Odd} < 1$$
+$$\text{a a }\frac{1}{First Odd} + \frac{1}{Second Odd} + \frac{1}{N Odd} < 1$$
 
 
 
