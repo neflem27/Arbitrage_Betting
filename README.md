@@ -30,12 +30,23 @@ $$\text{Arbitrage is possible if: }\frac{1}{\text{first odd}} + \frac{1}{\text{s
 Arbitrage is possible if the above calculation given *n* odds is less than 1. 
 
 #### 1.2 Total Bet Amount
-
 This algorithm uses the *Total Bet Amount* method which involves splitting the total bet into two or more stakes, resulting in the max equal payout.
 
 $$\text{Stake n Amount = } \frac{1}{\text{odd n}} * \text{Total Bet}$$
 
+#### 1.3 Total Stake
+
+Once we calculate the amount to place on each bet, we simply add the up and out Total Stake should equal our Total Bet Amount
+
 $$\text{Total Stake = } \text{Stake 1 Amount} + \text{Stake 2 Amount} + \text{Stake n Amount}$$
+
+#### 1.4 Payout & Profit
+
+&&\test{Payout = \text{Stake n Amount * Odds n}}
+
+In this case, all payouts are the same across all stakes.
+
+&& \text{Profit = } \text{Payout} - \text{Total Bet Amount} \text{where Total Bet Amount < Payout} &&
 
 **Note**: No transaction fees while placing bets are considered.
 
