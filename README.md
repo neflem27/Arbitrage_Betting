@@ -5,7 +5,7 @@ This project aims to develop an automated arbitrage betting algorithm capable of
 
 Arbitrage betting involves placing a defined amount of capital into every outcome of a specific event with the hopes of making a profit regardless of the actual result. Due to the fast-moving nature of sports bets, I must note that the odds calculated are subject to change at any time, meaning that the input odds and subsequent output combinations are fixed and might not be profitable in real-time. A way to reduce the error is by centering the algorithm on distant future events (1 week or more from now) as the online betting traffic decreases and the combinations remain still. Before anything else, let's go over a simple breakdown of arbitrage betting.
 
-## ** Example**
+## **Example**
 
 Scenario: A two-way bet in a tennis match between Andy Murray and Roger Feder.
 
