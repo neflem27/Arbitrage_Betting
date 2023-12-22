@@ -35,7 +35,7 @@ This algorithm uses the *Total Bet Amount* method which involves splitting the t
 
 $$\text{Stake n Amount = } \frac{1}{\text{odd n}} * \text{Total Bet}$$
 
-$$\text{Total Stake = } \text{Stake 1 Amount} + \text{Stake 2 Amount} + \stake{Stake n Amount}$$
+$$\text{Total Stake = } \text{Stake 1 Amount} + \text{Stake 2 Amount} + \text{Stake n Amount}$$
 
 **Note**: No transaction fees while placing bets are considered.
 
