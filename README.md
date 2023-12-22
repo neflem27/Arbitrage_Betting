@@ -17,13 +17,15 @@ Scenario: A two-way bet in a tennis match between Andy Murray and Roger Feder.
 
 In this case, there are two initial amounts multiplied by decimal odds and given their respective returns. Your Total Investment equates to $107 + $93 = $200. Profit in this case is Return - Total Investment. Given this, there is a 50-50 chance of going either way and getting either $204.37 from bet 1 or $204.60 from bet 2. This means that our profit is either $4.6 or $4.37, a return on investment (ROI) of 2 plus percent.
 
-Whether the odds fall under a single bookmaker or span across multiple bookies, the idea is simple, **reduce risk at all cost**. 
+Whether the odds fall under a single bookmaker or span across multiple bookies, the idea is simple, **reduce risk at all cost**.
+
+# Formula
+$$1 2 $$
+
+
+
 
 **Note**: No transaction fees while placing bets are considered.
-
-
-
-
 
 ## **Objectives:**
 1. **Algorithm Development:**
