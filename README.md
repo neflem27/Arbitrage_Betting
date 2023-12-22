@@ -19,8 +19,17 @@ In this case, there are two initial amounts multiplied by decimal odds and given
 
 Whether the odds fall under a single bookmaker or span across multiple bookies, the idea is simple, **reduce risk at all cost**.
 
-# Formula
-$$1 2 $$
+# Formulas Breakdown
+
+## Arbitrage Check
+First of all, we must calculate if arbitrage is possible given an odd combination.
+$$\frac{1}{First Odd} + \frac{1}{First Odd} < 1$$
+
+
+
+
+
+$$$$
 
 
 
