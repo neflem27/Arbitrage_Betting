@@ -21,13 +21,20 @@ Whether the odds fall under a single bookmaker or span across multiple bookies, 
 
 ## Formulas Breakdown
 
-First of all, we must calculate if arbitrage is possible given an odd combination.
+First of all, we must calculate if arbitrage is possible given an odd combination. 
+
 #### 1.1 Arbitrage Check
 
-$$\text{Arbitrage is possible if: }\frac{1}{\text{irst Odd}} + \frac{1}{\text{Second Odd}} + \frac{1}{N Odd} < 1$$
+$$\text{Arbitrage is possible if: }\frac{1}{\text{first odd}} + \frac{1}{\text{second odd}} + \frac{1}{\text{n odd}} < 1$$
 
+Arbitrage is possible if the above calculation given *n* odds is less than 1. 
 
+#### 1.2 Total Bet Amount
 
+This algorithm uses the *Total Bet Amount* method which involves splitting the total bet into two or more stakes, resulting in the max equal payout.
+
+$$\text{Total Bet Amount:}\frac{1}{\text{first odd}} + \frac{1}{\text{second odd}} + \frac{1}{\text{n odd}} < 1$$
+$$\text{Bet N Amount = } \frac{1}{\text{odd n}} * \text{Total Bet} $$
 
 
 **Note**: No transaction fees while placing bets are considered.
