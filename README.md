@@ -1,7 +1,23 @@
 **Project Title: Arbitrage Betting Algorithm for Optimal Winning Combinations in 2-Way and 3-Way Odds**
 
 **Overview:**
-This project aims to develop a sophisticated arbitrage betting algorithm capable of identifying and exploiting profitable opportunities within 2-way and 3-way odds scenarios. Arbitrage betting involves strategically placing bets on all possible outcomes of an event to guarantee a profit, leveraging discrepancies in odds offered by different bookmakers.
+This project aims to develop an automated arbitrage betting algorithm capable of identifying and exploiting profitable opportunities within 2-way and 3-way odds scenarios. Arbitrage betting involves strategically placing bets on all possible outcomes of an event to guarantee a profit, leveraging discrepancies in odds offered by different bookmakers.
+
+Arbitrage betting involves placing a defined amount of capital into every outcome of a specific event with the hopes of making a profit regardless of the actual result. Due to the fast-moving nature of sports bets, I must note that the odds calculated are subject to change at any time, meaning that the input odds and subsequent output combinations are fixed and might not be profitable in real-time. A way to reduce the error is by centering the algorithm on distant future events (1 week or more from now) as the online betting traffic decreases and the combinations remain still. Before anything else, let's go over a simple breakdown of arbitrage betting.
+
+**Example**
+
+Scenario: A two-way bet in a tennis match between Andy Murray and Roger Feder.
+
+<img
+  src="https://github.com/neflem27/Heart-Disease-Project/blob/main/HD_NA_MICE.png"
+  alt="Alt text"
+  title="Training Data"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+
+
+whether the odds fall under a single bookmaker or span across multiple bookings. The idea is simple, place mitigate risk at all cost 
 
 **Objectives:**
 1. **Algorithm Development:**
