@@ -29,11 +29,6 @@ $$ Arbitrage is possible if: \frac{1}{First Odd} + \frac{1}{Second Odd} + ... < 
 
 
 
-$$$$
-
-
-
-
 **Note**: No transaction fees while placing bets are considered.
 
 ## **Objectives:**
