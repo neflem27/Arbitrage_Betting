@@ -42,11 +42,11 @@ $$\text{Total Stake = } \text{Stake 1 Amount} + \text{Stake 2 Amount} + \text{St
 
 #### 1.4 Payout & Profit
 
-&&\test{Payout = \text{Stake n Amount * Odds n}}
+&&\test{Payout = \text{Stake n Amount * Odds n}}$$
 
 In this case, all payouts are the same across all stakes.
 
-&& \text{Profit = } \text{Payout} - \text{Total Bet Amount} \text{where Total Bet Amount < Payout} &&
+$$\text{Profit = } \text{Payout} - \text{Total Bet Amount} \text{where Total Bet Amount < Payout}$$
 
 **Note**: No transaction fees while placing bets are considered.
 
