@@ -34,7 +34,7 @@ Arbitrage is possible if the above calculation given *n* odds is less than 1.
 This algorithm uses the *Total Bet Amount* method which involves splitting the total bet into two or more stakes, resulting in the max equal payout.
 
 $$\text{Total Bet Amount:}\frac{1}{\text{first odd}} + \frac{1}{\text{second odd}} + \frac{1}{\text{n odd}}$$
-$$\text{Bet n Amount = } \frac{1}{\text{odd n}} * \text{Total Bet}$$
+$$\text{Bet n Amount = }\frac{1}{\text{odd n}} * \text{Total Bet}$$
 
 
 **Note**: No transaction fees while placing bets are considered.
