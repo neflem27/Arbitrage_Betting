@@ -1,4 +1,4 @@
-**Project Title: Arbitrage Betting Algorithm for Optimal Winning Combinations in 2-Way and 3-Way Odds**
+##**Arbitrage Betting Algorithm for Optimal Winning Combinations in 2-Way and 3-Way Odds**
 
 **Overview:**
 This project aims to develop an automated arbitrage betting algorithm capable of identifying and exploiting profitable opportunities within 2-way and 3-way odds scenarios. Arbitrage betting involves strategically placing bets on all possible outcomes of an event to guarantee a profit, leveraging discrepancies in odds offered by different bookmakers.
