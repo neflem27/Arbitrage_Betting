@@ -10,7 +10,7 @@ Arbitrage betting involves placing a defined amount of capital into every outcom
 Scenario: A two-way bet in a tennis match between Andy Murray and Roger Feder.
 
 <img
-  src="https://github.com/neflem27/Heart-Disease-Project/blob/main/HD_NA_MICE.png"
+  src="https://github.com/neflem27/Arbitrage_Betting/blob/main/arbitrage-1.jpg"
   alt="Alt text"
   title="Training Data"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
