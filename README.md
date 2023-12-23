@@ -138,3 +138,39 @@ Now that the easy part is done, we must think of a way to calculate all possible
 An ordered permutation is a specific arrangement or ordering of a set of elements in which the order of the elements matters. In other words, it is a way of arranging a set of distinct items in a specific sequence. For example, consider the set {A, B, C}. The ordered permutations of this set would include arrangements such as ABC, BAC, and CAB. Each of these permutations is distinct because the order of the elements matters.
 
 In the context of our arbitrage betting algorithm, ordered permutations refer to considering all possible arrangements of odds for different outcomes in a specific sequence. These permutations are explored to assess various combinations of bets and evaluate whether arbitrage opportunities exist based on the ordering of odds for different events.
+
+Given an input data frame, we must then find a way to calculate ordered permutations where each set of odds is unique and contains one instance from each event (column) for the *n* amount of rows. We can find unique ordered sets using the **expand.grid()** function which is used to create a data frame with all the values that can be formed with the combinations of all the vectors or factors passed to the function as an argument. Below is a quick example of its functionality:
+
+Let's pretend that the matrix below resembles our initial odds for a soccer match where Event A = Team 1 Wins, Event B = Tie, and Event C = Team 2 wins.
+
+$$\begin{bmatrix}
+A1 & B1 & C1\\
+A2 & B2 & C2\\
+A3 & B3 & C3
+\end{bmatrix}$$
+
+```ruby
+# R program to create a data frame with a combination of vectors 
+
+# Creating vectors 
+x1 <- c("A1", "A2", "A3") 
+x2 <- c("B2", "B2", "B3")
+x3 <- c("C1", "C2", "C3") 
+
+# Calling expand.grid() Function 
+expand.grid(x1, x2, x3) 
+```
+Output: 
+
+<img
+  src="https://github.com/neflem27/Arbitrage_Betting/blob/main/expand_grid_sample.png"
+  alt="Alt text"
+  title="Training Data"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+
+
+
+
+
+
