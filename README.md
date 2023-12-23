@@ -162,11 +162,8 @@ expand.grid(x1, x2, x3)
 ```
 Output: 
 
-<img
-  src="https://github.com/neflem27/Arbitrage_Betting/blob/main/expand_grid_sample.png"
-  alt="Alt text"
-  title="Training Data"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+![expand_grid_sample](https://github.com/neflem27/Arbitrage_Betting/assets/105387732/36e606bd-133a-47ec-a6a6-a309ef86d26d)
+
 
 
 
