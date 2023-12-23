@@ -50,6 +50,51 @@ $$\text{Profit = Payout - Total Bet Amount} \text{        where Total Bet Amount
 
 **Note**: No transaction fees while placing bets are considered.
 
+
+## Part 1: 'Odds_Converter' Function
+
+For simplicity, this algorithm will run its due processes in decimal odds. It will only be able to take decimal and American odds. The Odds_Converter() function transforms American odds into decimals by setting *odds_type* = *American*, else it will run them as decimals by default.  
+
+```
+Odds_Converter <- function(df, odds_type = c("American", "Decimal"), bet_type = c("2-Way Moneyline","3-Way Moneyline")){
+  if(bet_type == "2-Way Moneyline"){
+    if(odds_type == "American"){
+      oddsA <- as.numeric(df[,1])
+      OddsB <- as.numeric(df[,2])
+      a <- round(ifelse(oddsA > 0,(oddsA/100) + 1,1-(100/oddsA)),3)
+      b <- round(ifelse(OddsB > 0,(OddsB/100) + 1,1-(100/OddsB)),3)
+      return (data.frame(a,b))
+    }
+    if(odds_type == "Decimal"){return(df)}
+  }
+  if(bet_type == "3-Way Moneyline"){
+    if(odds_type == "American"){
+      oddsA <- as.numeric(df[,1])
+      OddsB <- as.numeric(df[,2])
+      OddsC <- as.numeric(df[,3])
+      a <- round(ifelse(oddsA > 0,(oddsA/100) + 1,1-(100/oddsA)),3)
+      b <- round(ifelse(OddsB > 0,(OddsB/100) + 1,1-(100/OddsB)),3)
+      c <- round(ifelse(OddsC > 0,(OddsC/100) + 1,1-(100/OddsC)),3)
+      return(data.frame(a,b,c))
+    }
+    if(odds_type == "Decimal"){return(df)}
+  }
+}
+```
+
+same thing and hold no difference in terms of payouts.
+This function accepts a data frame (df), representing odds, and two optional parameters: odds_type and bet_type. The primary functionality is to convert odds to Decimal format based on user specifications.
+
+Parameters:
+df: Data frame containing odds.
+odds_type: Type of odds provided in the data frame, with options "American" or "Decimal" (default is "American").
+bet_type: Type of bet, either "2-Way Moneyline" or "3-Way Moneyline" (default is "2-Way Moneyline").
+
+
+
+
+
+
 ## **Objectives:**
 1. **Algorithm Development:**
    Design and implement a robust algorithm to analyze 2-way and 3-way odds across multiple bookmakers.
