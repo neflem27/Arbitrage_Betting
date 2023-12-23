@@ -1,4 +1,8 @@
-# **Arbitrage Betting Algorithm for Optimal Winning Combinations in 2-Way and 3-Way Odds**
+# **Arbitrage Betting Algorithm and App Development**
+By Neftali Lemus 
+
+![download](https://github.com/neflem27/Arbitrage_Betting/assets/105387732/d17fb19c-95c8-4cf5-9e8b-402226ef341b)
+
 
 ## **Overview:**
 This project aims to develop an automated arbitrage betting algorithm capable of identifying and exploiting profitable opportunities within 2-way and 3-way odds scenarios. Arbitrage betting involves strategically placing bets on all possible outcomes of an event to guarantee a profit, leveraging discrepancies in odds offered by different bookmakers.
@@ -91,6 +95,10 @@ $$\text{Profit = Payout - Total Bet Amount} \text{        where Total Bet Amount
 
 **Note**: No transaction fees while placing bets are considered.
 
+#### 1.5 American Odds to Decimal
+
+$$\text{Decimal Odds: } = \frac{\text{American Odds}}{100} + 1$$
+
 
 ## Part 1: 'Odds_Converter' Function
 
@@ -163,6 +171,56 @@ expand.grid(x1, x2, x3)
 Output: 
 
 ![expand_grid_sample](https://github.com/neflem27/Arbitrage_Betting/assets/105387732/36e606bd-133a-47ec-a6a6-a309ef86d26d)
+
+## Part 3: Arbitrage Indicator
+
+Now that we have successfully calculated all possible odd combinations, it is time to revisit our **Arbitrage Check Formula** from section 1.1 which served as the backbone of my arbitrage indicator function *arbin23_Final*. 
+
+This function is designed to analyze scraped odds and determine the existence of arbitrage opportunities for either "2-Way Moneyline" or "3-Way Moneyline" bets.
+
+Parameters:
+Scrapped_odds: A data frame containing odds data.
+bet_type: A character specifying the type of bet ("2-Way Moneyline" or "3-Way Moneyline").
+
+```ruby
+arbin23_Final <- function(Scrapped_odds, bet_type){
+  if(bet_type == "2-Way Moneyline"){
+    first_odd <- Scrapped_odds[,1]
+    second_odd <- Scrapped_odds[,2]
+    arb_vec <- nrow(Scrapped_odds)
+    for(i in 1:length(first_odd)){
+      if(((1/first_odd[i])+(1/second_odd[i]) < 1)){
+        arb_vec[i] <- 1}else{arb_vec[i] <- 0}
+    }
+  }
+  if(bet_type == "3-Way Moneyline"){
+    first_odd <- Scrapped_odds[,1]
+    second_odd <- Scrapped_odds[,2]
+    third_odd <- Scrapped_odds[,3]
+    arb_vec <- nrow(Scrapped_odds)
+    for(i in 1:length(first_odd)){
+      if(((1/first_odd[i])+(1/second_odd[i]) + (1/third_odd[i]) < 1)){
+        arb_vec[i] <- 1}else{arb_vec[i] <- 0}
+    }
+  }
+  arb_vec
+}
+```
+
+Logic:
+For "2-Way Moneyline" & "3-way Moneyline":
+
+Extracts the first and second odds (and third odds if applicable) from the data frame. Initializes a vector arb_vec with the number of rows in Scrapped_odds. Iterates through each row and checks if the sum of the inverse odds is less than 1. If true, set the corresponding element in arb_vec to 1; otherwise, set it to 0.
+
+The function then returns the resulting vector arb_vec, indicating arbitrage opportunities. Each element corresponds to a row in the input data frame, with 1 indicating an arbitrage opportunity and 0 indicating no arbitrage opportunity. 
+
+Moreover, the resulting combinations where arbitrage exists are set apart in an outcome data frame containing only profitable combinations. 
+
+## Arbitrage Layouts
+
+Once the winning bet combinations are found, we need to use our **Total Bet Amount Formula** (1.2) and add them up to obtain our total layout. 
+
+
 
 
 
